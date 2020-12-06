@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27HR0KPSPX"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-27HR0KPSPX');
+	</script>
+</head>
+<body>
+	
+<header>
+	<h1 id = "asdf">Stephen Hayden</h1>
+    <button class = "button" id = "night_mode">Night Mode</button>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+	
+</header>
+<nav>
+	<ul class = "nav_bar">
+		<li><a href="index.html" id = "bbbb">Home</a></li>
+		<li><a href="resume.html">Resumé</a></li>
+		<li><a href="about.html">About me</a></li>
+		<li><a href="demos.html">Demos</a></li>
+	</ul>
+</nav>
+<h1>Stephen Hayden</h1>
+<main id ="main" class="index">
+<form action = "https://formspree.io/f/mjvpabry" method="POST">
+    <fieldset>
+        <legend>Contact me</legend>
+
+        <label for="name_id">Name</label>
+        <input type="text" placeholder="Please enter your name" id="name_id" name="name" required>
+
+        <label for="email_id">Email</label>
+        <input type="email" placeholder="Please enter your email address" id = "email_id" name='email' required>
+
+        <label for="phone_id">Your Phone Number</label>
+        <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        <div><span>Format: 123-456-7890</span></div>
+
+        <label for="msg">Leave A Message</label>
+        <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+
+        <input type="checkbox" checked="checked" name="remember" id = "cBox">
+        <label for ="cBox">Remember me</label>
+
+        <input type="submit" value = "Contact Me">
+        </fieldset>
+    </form>
+<script src = "js/night_mode.js"></script>
+</main>
+<footer>
+<p>Stephen Hayden &#169; 2020</p>
+<a href="contact.html">Contact me</a>
+</footer>
+</body>
+</html>
