@@ -6,10 +6,19 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27HR0KPSPX"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-27HR0KPSPX');
+	</script>
 <body>
 	
 <header>
     <h1 id = "asdf">Stephen Hayden</h1>
+    <button class = "button" id = "night_mode">Night Mode</button>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<nav>
 		<ul class = "nav_bar">
@@ -22,10 +31,11 @@
 	<h1>Resumé</h1>
 </header>
 <main id = "main" class="resume" tabindex="0">
-    <h1 id = "Education">Education</h1>
+    <div class = resume_box>
         <div class="Education">
             <div class="box">
                 <ul class = "a">
+                    <h1 id = "Education">Education</h1>
                     <li class = "b">
                     University of Michigan School of Information: Ann Arbor MI, September 2019-May 2021
                         <ul>
@@ -45,10 +55,10 @@
                 </ul>
             </div>
         </div>
-    <h1 id ="classes">Classes</h1>
         <div class = "classes">
             <div class="box"> 
                 <ul>
+                    <h1 id ="classes">Classes</h1>
                     <li class = 'class_title'> Study Abroad: Ohio State Program in the Transnational History of WWII </li>
                     <ul>
                     <li>
@@ -136,10 +146,11 @@
                 </ul>
             </div>
         </div>
-    <h1 id="work_history">Work History</h1>
+    
         <div class="work_history">
             <div class="box">
                 <ul>
+                    <h1 id="work_history">Work History</h1>
                     <li class = 'class_title'> Library Assistant to University of Michigan dept. of Philosophy: September 2019-May 2021
                     </li><ul>
                             <li>
@@ -166,10 +177,10 @@
                 </ul>
             </div>
         </div>
-    <h1 id="extracurricular">Extracurricular Activities</h1>
         <div class="work_history">
             <div class="box">
                 <ul>
+                    <h1 id="extracurricular">Extracurricular Activities</h1>
                     <li class = 'class_title'>UMSI Quasicon 2019</li>
                         <ul>
                             <li>
@@ -193,10 +204,12 @@
             </div>
 
         </div>
-
+    </div>
+<script src = "js/night_mode.js"></script>
 </main>
 <footer>
 <p>Stephen Hayden &#169; 2020</p>
+<a href="contact.html">Contact me</a>
 </footer>
 </body>
 </html>
