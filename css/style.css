@@ -1,10 +1,20 @@
 h1,h2,h3, .skip{
     font-family: 'Space Mono', monospace;
 }
-
+body{
+    background-color:#f2efe8;
+    padding: 15px;
+    color: #363538;
+    font-family: 'Montserrat', sans-serif;
+}
+.night_mode{
+    background-color: #363538;
+    color: #F6f6f6;
+}
 ul, li,p{
     font-family: 'Montserrat', sans-serif;
     padding: 15px 15px 15px 15px;
+    line-height: 1.5;
 }
 #asdf{
     position: absolute;
@@ -17,15 +27,19 @@ ul, li,p{
     flex-direction: column;
     align-self: center;
   }
+a{
+    color: #8d8c8a;
+}
 .index{
     display:grid;
     grid-template-columns: 1fr 1fr;
     padding: 15px 15px 15px 15px;
 }
-.box{
-    list-style-type: square;
+
+
+.resume_box{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
     padding: 15px 15px 15px 15px;
     letter-spacing: 2px;
 }
@@ -49,9 +63,19 @@ ul, li,p{
     align-content: center;
     gap: 30px;
 }
-#classes{
+.row{display:flex;flex-direction:row;flex-wrap:wrap;width:100%;}
+.image{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
-
+.bio{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
 li:hover{
     background:lightgray;
 }
@@ -61,7 +85,13 @@ li:hover{
 iframe{
     max-height: 800px;
     height: 500px;
-    width: 850px;}
+    width: 850px;
+    border: 4px solid black;
+}
+video{
+    border: 4px solid black;
+    height: 532px;
+}
 .skip a{
     background: white;
     left: 0;
@@ -85,3 +115,114 @@ iframe{
     top: 0px;
     overflow: visible;
     }
+
+.button{
+    box-shadow: 0 3px gray;
+}
+
+.button:active{
+    transform:translateY(4px);
+}
+
+form{
+    border: 3px solid #8d8c8a;
+    margin: 0 auto auto auto;
+    width: 100%;
+}
+
+legend{
+    font-size: 125%;
+    font-weight: 900;
+}
+
+label{
+    display: inline-block;
+    margin-right:10px;
+    width:15%;
+  }
+input {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+span{
+margin-left:20%;
+font-family: italic;
+font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+.parallax{
+    background-image: url("../images/thompson.jpg");
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    min-height: 450px;
+}
+.image1{
+    width: 500px;
+    height: 500px;
+}
+.flip-card{
+    background-color: transparent;
+    margin: 0 0 0 150px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid  #8d8c8a;
+    perspective: 1000px;
+}
+
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+} 
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion:reduce){
+    .button:active{
+        transform: none;
+    }
+   }
