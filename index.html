@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap" rel="stylesheet">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6GRK3B3T6"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-27HR0KPSPX"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
@@ -18,34 +19,36 @@
 <body>
 	
 <header>
-	<h1 id = "asdf">Stephen Hayden</h1>
-	<button class = "button" id = "night_mode">Night Mode</button>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<nav>
+		<ul class = "nav_bar">
+			<li><a href="index.html"> Home</a></li>
+            <li><a href="resume.html"> ASDF Resumé</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="demos.html">Demos</a></li>
+		</ul>
+	</nav>
+    <h1 id = "asdf">Stephen Hayden</h1>
+    <button class = "button" id = "night_mode">Night Mode</button>
+    <h1 class = "rHead">Home</h1>
 </header>
-<nav>
-	<ul class = "nav_bar">
-		<li><a href="index.html" id = "bbbb">Home</a></li>
-		<li><a href="resume.html">Resumé</a></li>
-		<li><a href="about.html">About me</a></li>
-		<li><a href="demos.html">Demos</a></li>
-	</ul>
-</nav>
-<h1>Stephen Hayden</h1>
 <div class = "parallax"></div>
 <main id ="main" class="index">
+	
 
 <p>
 I am currently a second year Master's of Science in Information student at the University of Michigan studying digital curation and special collections archiving</p>
-
-<div class ="flip-card" tabindex="0">
-	<div class=flip-card-inner>
-		<div class = 'flip-card-front'>
-			<img class = "image1" src = "images/prof_pic.jpg" alt = "Men's Glee Club"/>
-		</div>
-		<div class = "flip-card-back">
-			<h3>Stephen Hayden contact</h3>
-			<p>Email: schayden@umich.edu</p>
-			<p>Phone: (419)-419-9767</p>
+<div class = "home_flip_card">
+	<div class ="flip-card" tabindex="0">
+		<div class=flip-card-inner>
+			<div class = 'flip-card-front'>
+				<img class = "image1" src = "images/prof_pic.jpg" alt = "Men's Glee Club"/>
+			</div>
+			<div class = "flip-card-back">
+				<h3>Stephen Hayden contact</h3>
+				<p>Email: schayden@umich.edu</p>
+				<p>Phone: (419)-419-9767</p>
+			</div>
 		</div>
 	</div>
 </div>
