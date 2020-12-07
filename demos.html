@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Demos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&display=swap" rel="stylesheet">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H6GRK3B3T6"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-27HR0KPSPX"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
@@ -17,28 +18,61 @@
 <body>
 
 <header>
-	<h1 id = "asdf">Stephen Hayden</h1>
-	<button class = "button" id = "night_mode">Night Mode</button>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
 	<nav>
-		<ul class="nav_bar">
-			<li><a href="index.html">Home</a></li>
+		<ul class = "nav_bar">
+			<li><a href="index.html"> Home</a></li>
             <li><a href="resume.html">Resumé</a></li>
             <li><a href="about.html">About me</a></li>
             <li><a href="demos.html">Demos</a></li>
 		</ul>
 	</nav>
-	<h1>Demos</h1>
+    <h1 id = "asdf">Stephen Hayden</h1>
+    <button class = "button" id = "night_mode">Night Mode</button>
+    <h1 class = "rHead">Demos</h1>
 </header>
 <main id="main" class="demo_container">
 <p>
 Please find on this page demos of my past work</p>
-<video width="850" height="700" controls>
-	<source src="videos/507_demo.mp4" type="video/mp4">SI507 Demo
-</video>
-<div class=iframe_height>
-<iframe src="https://umsi580.lsait.lsa.umich.edu/s/team-5-blueprint-for-resistance/page/welcome" title="Blueprint">Blueprint for Resistance</iframe>
+<div class="slideshow_container">
+	<div class="slides fade">
+		<div class="slide_number"> 1 / 3</div>
+		<video width="850" height="700" controls>
+			<source src="videos/507_demo.mp4" type="video/mp4">SI507 Demo
+		</video>
+	</div>
+
+	<div class="slides fade">
+		<div class = slide_number> 2 / 3</div>
+		<div class=iframe_height id="iframe">
+			<iframe src="https://umsi580.lsait.lsa.umich.edu/s/team-5-blueprint-for-resistance/page/welcome" title="Blueprint">Blueprint for Resistance</iframe>
+		</div>
+	</div>
+
+	<div class="slides fade">
+		<div class = slide_number> 3 / 3</div>
+		<div class=iframe_height id="iframe">
+			<video width="850" height="700" controls>
+				<source src="videos/sql_demo.mov" type="video/mp4">SI507 Demo
+			</video>
+		</div>
+	</div>
+
+	<a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+
+
 <script src = "js/night_mode.js"></script>
 </main>
 <footer>
@@ -47,3 +81,6 @@ Please find on this page demos of my past work</p>
 </footer>
 </body>
 </html>
+
+
+
