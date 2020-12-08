@@ -8,6 +8,8 @@ body{
     margin: 0px 0px 0px 0px;
     width: 100vw;
     overflow-x: hidden;
+    letter-spacing: 2px;
+    word-spacing: 6px;
 }
 header{
     display: flex;
@@ -364,7 +366,9 @@ textarea{
     transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap:hover .img__description_layer {
+.img__wrap:hover .img__description_layer,
+.img_wrap:focus-within .img__description_layer,
+.img__wrap:focus .img__description_layer {
     visibility: visible;
     opacity: 1;
 }
@@ -487,6 +491,8 @@ textarea{
 .footer{
     display: flex;
     flex-direction: row;
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
 @-webkit-keyframes fade {
     from {opacity: .4}
@@ -506,8 +512,10 @@ and (orientation : portrait){
         margin-left: 25vw;
     }
     .resume_box{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
     }
     header{
         display: flex;
