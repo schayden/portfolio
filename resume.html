@@ -14,32 +14,37 @@
 	gtag('js', new Date());
 
 	gtag('config', 'G-27HR0KPSPX');
-	</script>
+    </script>
+    <style>
+        body{
+            margin:0px 0px 0px 0px;
+            padding:0;
+        }
+        head{margin: 0;padding: 0;}
+        </style>
+</head>
 <body>
 	
 <header>
     
     
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
-	<nav>
-		<ul class = "nav_bar">
-			<li><a href="index.html"> Home</a></li>
-            <li><a href="resume.html"> ASDF Resumé</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="demos.html">Demos</a></li>
-		</ul>
+	<nav class = "nav_bar">
+            <button class = "link_button" onclick="window.location.href='index.html';">Home</button>
+            <button class = "active_button" id = "active_link" onclick="window.location.href='resume.html';">Resumé</button>
+            <button class = "link_button" onclick="window.location.href='about.html';">About me</button>
+            <button class = "link_button" onclick="window.location.href='demos.html';">Demos</button>
 	</nav>
     <h1 id = "asdf">Stephen Hayden</h1>
-    <button class = "button" id = "night_mode">Night Mode</button>
-    <h1 class = "rHead">Resumé</h1>
+    <button class = "night_button" id = "night_mode">Night Mode</button>
 </header>
 <main id = "main" class="resume" tabindex="0">
     <div class = resume_box>
-        <div class="r_section_head">
+        <div class="Education">
             <div class="box">
                 <ul class = "a">
-                    <h1 class = "section_head">Education</h1>
-                    <li id = "b">
+                    <h1 id = "Education">Education</h1>
+                    <li class = "b">
                     University of Michigan School of Information: Ann Arbor MI, September 2019-May 2021
                         <ul>
                             <li>
@@ -58,10 +63,10 @@
                 </ul>
             </div>
         </div>
-        <div class = "r_section_head">
+        <div class = "classes">
             <div class="box"> 
                 <ul>
-                    <h1 class = "section_head">Classes</h1>
+                    <h1 id ="classes">Classes</h1>
                     <li class = 'class_title'> Study Abroad: Ohio State Program in the Transnational History of WWII </li>
                     <ul>
                     <li>
@@ -71,10 +76,10 @@
                     <li class = 'class_title'>Internship with Defense POW/MIA Accounting Agency (DPAA) : August-December, 2019</li>
                     <ul>
                     <li>
-                    Independent  Research to create a database of U.S. Army's missing from Laos and Vietnam
+                    Independent Research to create a database of U.S. Army's missing from Laos and Vietnam
                     </li>
                     <li>
-                    Research to associate those missing with their operation and the creation of a pamphlet to guide oral history interviews on those operations
+                    Resarch to associate those missing with their operation and the creation of a pamphlet to guide oral history interviews on those operations
                     </li>
                     </ul>
                     <li class = 'class_title'>
@@ -150,10 +155,10 @@
             </div>
         </div>
     
-        <div class="r_section_head">
+        <div class="work_history">
             <div class="box">
                 <ul>
-                    <h1 class = "section_head">Work History</h1>
+                    <h1 id="work_history">Work History</h1>
                     <li class = 'class_title'> Library Assistant to University of Michigan dept. of Philosophy: September 2019-May 2021
                     </li><ul>
                             <li>
@@ -180,10 +185,10 @@
                 </ul>
             </div>
         </div>
-        <div class="r_section_head">
+        <div class="work_history">
             <div class="box">
                 <ul>
-                    <h1 class = "section_head">Extracurricular Activities</h1>
+                    <h1 id="extracurricular">Extracurricular Activities</h1>
                     <li class = 'class_title'>UMSI Quasicon 2019</li>
                         <ul>
                             <li>
@@ -212,7 +217,7 @@
 </main>
 <footer>
 <p>Stephen Hayden &#169; 2020</p>
-<a href="contact.html">Contact me</a>
+<button class = "contact_button" onclick="window.location.href='contact.html';">Contact me</button>
 </footer>
 </body>
 </html>
