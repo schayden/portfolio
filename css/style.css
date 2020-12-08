@@ -8,8 +8,6 @@ body{
     margin: 0px 0px 0px 0px;
     width: 100vw;
     overflow-x: hidden;
-    letter-spacing: 2px;
-    word-spacing: 6px;
 }
 header{
     display: flex;
@@ -606,6 +604,10 @@ and (orientation : landscape){
 
 
 @media  screen and (min-width:1025px){
+    body{
+        letter-spacing: 2px;
+    word-spacing: 6px;
+    }
     header{
         padding-bottom: 45px;
     }
