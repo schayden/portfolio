@@ -15,26 +15,23 @@
 
 	gtag('config', 'G-27HR0KPSPX');
 	</script>
-<body>  
+<body>
 <header>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
-	<nav>
-		<ul class = "nav_bar">
-			<li><a href="index.html"> Home</a></li>
-            <li><a href="resume.html">Resumé</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="demos.html">Demos</a></li>
-		</ul>
+	<div class="skip"><a href="#main">Skip to Main Content</a></div>
+	<nav class = "nav_bar">
+			<button class = "link_button" onclick="window.location.href='index.html';">Home</button>
+            <button class = "link_button" id = "active_link" onclick="window.location.href='resume.html';">Resumé</button>
+            <button class = "active_button" onclick="window.location.href='about.html';">About me</button>
+            <button class = "link_button" onclick="window.location.href='demos.html';">Demos</button>
 	</nav>
     <h1 id = "asdf">Stephen Hayden</h1>
-    <button class = "button" id = "night_mode">Night Mode</button>
-    <h1 class = "rHead">About me</h1>
+    <button class = "night_button" id = "night_mode">Night Mode</button>
 </header>
-<main class="container" id="main">
+<main class="about-container" id="main">
 <div class="img__wrap">
     <h2 class = "img_head">OSU Men's Glee club</h2>
 
-    <img class="img__img" id = "mgc" src="images/mgc.jpg"/>
+    <img class="img__img" id = "mgc" src="images/mgc.jpg" alt = "OSU MGC Concert"/>
     <div class="img__description_layer">
       <p class="img__description">For my final three years of undergrad I was a member of the Ohio State University Men's Glee Club. As an ensemble, we travelled largely around Ohio, though extending to Michigan, Indiana, and West Virginia to perform
         and work with high school students on their choral education. Averaging 80 members, I also spent time within the smaller communications commitee, responsible for organizing communication within the ensemble, as well as
@@ -146,7 +143,7 @@
 </main>
 <footer>
 <p>Stephen Hayden &#169; 2020</p>
-<a href="contact.html">Contact me</a>
+<button class = "contact_button" onclick="window.location.href='contact.html';">Contact me</button>
 </footer>
 </body>
 </html>
