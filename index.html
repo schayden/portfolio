@@ -20,17 +20,14 @@
 	
 <header>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
-	<nav>
-		<ul class = "nav_bar">
-			<li><a href="index.html"> Home</a></li>
-            <li><a href="resume.html"> ASDF Resumé</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="demos.html">Demos</a></li>
-		</ul>
+	<nav class='nav_bar'>
+			<button class = "active_button" onclick="window.location.href='index.html';">Home</button>
+            <button class = "link_button" id = "active_link" onclick="window.location.href='resume.html';">Resumé</button>
+            <button class = "link_button" onclick="window.location.href='about.html';">About me</button>
+            <button class = "link_button" onclick="window.location.href='demos.html';">Demos</button>
 	</nav>
     <h1 id = "asdf">Stephen Hayden</h1>
-    <button class = "button" id = "night_mode">Night Mode</button>
-    <h1 class = "rHead">Home</h1>
+    <button class = "night_button" id = "night_mode">Night Mode</button>
 </header>
 <div class = "parallax"></div>
 <main id ="main" class="index">
@@ -42,10 +39,10 @@ I am currently a second year Master's of Science in Information student at the U
 	<div class ="flip-card" tabindex="0">
 		<div class=flip-card-inner>
 			<div class = 'flip-card-front'>
-				<img class = "image1" src = "images/prof_pic.jpg" alt = "Men's Glee Club"/>
+				<img class = "image1" src = "images/prof_pic.jpg" alt = "Landing picture"/>
 			</div>
 			<div class = "flip-card-back">
-				<h3>Stephen Hayden contact</h3>
+				<h2>Stephen Hayden contact</h3>
 				<p>Email: schayden@umich.edu</p>
 				<p>Phone: (419)-419-9767</p>
 			</div>
@@ -57,7 +54,7 @@ I am currently a second year Master's of Science in Information student at the U
 </main>
 <footer>
 <p>Stephen Hayden &#169; 2020</p>
-<a href="contact.html">Contact me</a>
+<button class = "contact_button" onclick="window.location.href='contact.html';">Contact me</button>
 </footer>
 </body>
 </html>
