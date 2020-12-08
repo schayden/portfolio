@@ -19,17 +19,14 @@
 
 <header>
 	<div class="skip"><a href="#main">Skip to Main Content</a></div>
-	<nav>
-		<ul class = "nav_bar">
-			<li><a href="index.html"> Home</a></li>
-            <li><a href="resume.html">Resumé</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="demos.html">Demos</a></li>
-		</ul>
+	<nav class="nav_bar">
+			<button class = "link_button" onclick="window.location.href='index.html';">Home</button>
+            <button class = "link_button" id = "active_link" onclick="window.location.href='resume.html';">Resumé</button>
+            <button class = "link_button" onclick="window.location.href='about.html';">About me</button>
+			<button class = "active_button" onclick="window.location.href='demos.html';">Demos</button>
 	</nav>
     <h1 id = "asdf">Stephen Hayden</h1>
-    <button class = "button" id = "night_mode">Night Mode</button>
-    <h1 class = "rHead">Demos</h1>
+    <button class = "night_button" id = "night_mode">Night Mode</button>
 </header>
 <main id="main" class="demo_container">
 <p>
@@ -51,8 +48,9 @@ Please find on this page demos of my past work</p>
 
 	<div class="slides fade">
 		<div class = slide_number> 3 / 3</div>
-		<div class=iframe_height id="iframe">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/9Q9P-pWkSfU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<video width="850" height="700" controls>
+				<source src="videos/sql_demo.mov" type="video/mp4">SI507 Demo
+			</video>
 		</div>
 	</div>
 
@@ -75,7 +73,7 @@ Please find on this page demos of my past work</p>
 </main>
 <footer>
 <p>Stephen Hayden &#169; 2020</p>
-<a href="contact.html">Contact me</a>
+<button class = "contact_button" onclick="window.location.href='contact.html';">Contact me</button>
 </footer>
 </body>
 </html>
